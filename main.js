@@ -46,12 +46,21 @@ console.log(typeof 100..toString())
 //vd 16 --------------------------------------------------------------
 console.log(name.repeat(4))
 console.log(name.length)
-
+//----
 console.log(name[0])//console.log(name[10]) -> undefinded
 console.log(name.charAt(0))//console.log(name.charAt(10)) -> '  '
-
+//----
 console.log(name.indexOf('n',4)) //start serch
 console.log(name.lastIndexOf('n'))
 console.log(name.slice(2,5))
 console.log(name.split('',3))
 //vd 17 --------------------------------------------------------------
+let n = 'i love java script'
+console.log(n.slice(2,6))//accpet (-)
+console.log(n.substring(2,6))// can t accpt (-)
+console.log(n.substr(2,6))//look in th console
+//vd 18 --------------------------------------------------------------
+console.log(n.includes('a',2))//if exist ->true
+console.log(n.startsWith('love',2))
+console.log(n.endsWith('e',6))
+//vd 19 --------------------------------------------------------------
