@@ -70,5 +70,23 @@ let object = [1,2,3,[1,2,99]]
 console.log (object[3][2])
 //modify in arry 
  names[3]= 'abderahmen'
- console.log(names)
  //vd 20 --------------------------------------------------------------
+ names.push('jamel','taher')
+ names.unshift('wari')
+ console.log(names)
+ names.shift()
+ console.log(names)
+ console.log(names.shift())
+ names.pop()
+ console.log(names)
+ console.log(names.pop())
+  //vd 21 --------------------------------------------------------------
+  //delete from array part 2 
+  //splice (start,conut,add,add)
+  //slice (start , count -1)
+  names.splice(2,1)
+  console.log(names)
+  names.splice(2,0,'mona','houcine')
+  console.log(names)
+  
+  console.log(names.slice(0,2))
