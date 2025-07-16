@@ -64,3 +64,11 @@ console.log(n.includes('a',2))//if exist ->true
 console.log(n.startsWith('love',2))
 console.log(n.endsWith('e',6))
 //vd 19 --------------------------------------------------------------
+let names = ['ahmed' ,'ali','somiya',]
+console.log(names[names.length-1])
+let object = [1,2,3,[1,2,99]]
+console.log (object[3][2])
+//modify in arry 
+ names[3]= 'abderahmen'
+ console.log(names)
+ //vd 20 --------------------------------------------------------------
