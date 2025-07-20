@@ -140,7 +140,7 @@ let n2 = 6
 if (n1 < n2) {
    console.log('num1<num2')
 }
-let role = 1 /*prompt('what is your role ?')*/
+let role = 1 /*prompt('what is your role ?')
 if (role == 'admin') {
    document.write('update , create , delete')
 }
@@ -149,7 +149,7 @@ else if (role == 'moderator') {
 }
 else {
    document.write('sorry u cant do any think# \n')
-}
+}*/
 //vd 28 --------------------------------------------------------------
 let result = 10/*prompt('what is your result ??')*/
 if (result >= 16) { document.write('excellent !!') }
@@ -157,10 +157,24 @@ else if (result >= 12) { document.write('very good ') }
 else if (result >= 10) { document.write('good') }
 else { document.write('bed note') }
 //vd 29 -------------------------------------------------------------- 
- result>=10? document.write(' result > 10'): document.write(' result < 10')
-let ag = prompt ('whats ur age ??')
- result = ag > 18? 'hello user' 
- :ag == 18? 'u are 18 now'
- : 'u are younger'
- console.log(result)
- //vd 30 -------------------------------------------------------------- 
+result >= 10 ? document.write(' result > 10  ') : document.write(' result < 10  ')
+let ag = 18/*prompt ('whats ur age ??')*/
+result = ag > 18 ? 'hello user'
+   : ag == 18 ? 'u are 18 now'
+      : 'u are younger'
+console.log(result)
+//vd 30 -------------------------------------------------------------- 
+//switch
+document.write('<br>')
+let rol = 'user'/*prompt('what s ur role ??')*/
+switch (rol) {
+   case 'admin': document.write('you are admin');
+      break;
+   case 'moderator': document.write('u are moderator')
+      break;
+   case 'user': document.write('hello user');
+      break;
+   default: document.write('hello world !!');
+}
+//vd 31 -----------loop-----------------------------------------------
+
