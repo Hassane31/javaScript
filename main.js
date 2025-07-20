@@ -90,16 +90,16 @@ names.splice(2, 0, 'mona', 'houcine')
 console.log(names)
 console.log(names.slice(0, 2))
 //vd 22 --------------------------------------------------------------
-console.log(names.indexOf('ahmed',1/*start*/))
+console.log(names.indexOf('ahmed', 1/*start*/))
 console.log(names.lastIndexOf('ahmed'))//reverse of indexOF
 console.log(names.includes('ahmed'))//existing (return true/false)
 //vd 23 --------------------------------------------------------------
-let arr = ['ahmed','yacine','mhmd']
+let arr = ['ahmed', 'yacine', 'mhmd']
 console.log(arr.reverse())
 console.log(arr.sort())//alphabetizing
 //vd 24 --------------------------------------------------------------
 //concatination and join
-let arr2 = ['youcef','mo3ad','adel']
+let arr2 = ['youcef', 'mo3ad', 'adel']
 
 /*arr+=arr2;
 console.log(arr)*/
@@ -118,8 +118,49 @@ let x = 'hassane'
 console.log(x.toUpperCase())
 console.log(x.toLowerCase())
 
-let askmail = prompt('enter your email')
+//let askmail = prompt('enter your email')
 let email = 'laabane@gmail.com'
-console.log( askmail.toLowerCase().trim() == email)
+//console.log( askmail.toLowerCase().trim() == email)
 //trim -> delete spaces
 //vd 26 --------------------------------------------------------------
+// == -> values 
+// === -> data type and values 
+console.log(5 == '5')
+console.log(5 === '5')
+
+let product = 'TV'
+let size = 50
+let salary = 1000
+
+console.log((salary >= 1000) && (size == 50))
+//vd 27 --------------------------------------------------------------
+let n1 = 7
+let n2 = 6
+
+if (n1 < n2) {
+   console.log('num1<num2')
+}
+let role = 1 /*prompt('what is your role ?')*/
+if (role == 'admin') {
+   document.write('update , create , delete')
+}
+else if (role == 'moderator') {
+   document.write('update ,create')
+}
+else {
+   document.write('sorry u cant do any think# \n')
+}
+//vd 28 --------------------------------------------------------------
+let result = 10/*prompt('what is your result ??')*/
+if (result >= 16) { document.write('excellent !!') }
+else if (result >= 12) { document.write('very good ') }
+else if (result >= 10) { document.write('good') }
+else { document.write('bed note') }
+//vd 29 -------------------------------------------------------------- 
+ result>=10? document.write(' result > 10'): document.write(' result < 10')
+let ag = prompt ('whats ur age ??')
+ result = ag > 18? 'hello user' 
+ :ag == 18? 'u are 18 now'
+ : 'u are younger'
+ console.log(result)
+ //vd 30 -------------------------------------------------------------- 
