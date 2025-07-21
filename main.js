@@ -182,3 +182,12 @@ switch (rol) {
    console.log(i)
  }
 //vd 32 -----------loop-----------------------------------------------
+let namess = ['hassane','houcine','ali','houssem']
+let X1 = 'hassane'
+for(let i = 0 ; i<namess.length ; i++ ){
+   console.log(namess[i]+i)
+}
+for(let i = X1.length-1 ; i>=0 ; i-- ){
+   console.log(X1[i])
+}
+//vd 33 -----------loop-----------------------------------------------
