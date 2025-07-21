@@ -177,4 +177,8 @@ switch (rol) {
    default: document.write('hello world !!');
 }
 //vd 31 -----------loop-----------------------------------------------
-
+ for(let i=0;i<=3;i++){
+   console.log('hello world ')
+   console.log(i)
+ }
+//vd 32 -----------loop-----------------------------------------------
