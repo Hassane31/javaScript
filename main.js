@@ -191,3 +191,41 @@ for(let i = X1.length-1 ; i>=0 ; i-- ){
    console.log(X1[i])
 }
 //vd 33 -----------loop-----------------------------------------------
+let cars = ['BMW','Mercides','renult']
+let modeles = ['2000','1989','2001']
+
+for(let i = 0 ; i<cars.length ;i++){
+   console.log(`CAR : ${cars[i]}`)
+     for(let j = 0 ; j< modeles.length ; j++){
+      console.log(`modele :'${modeles[j]}`)
+     }
+     console.log('_________________')
+}
+//vd 34 -------------------break/continue-------------------------------------------
+let users = ['hassane','mohamed','yacine',1,2,3,4,'khaled']
+
+for (let i=0 ; i<users.length ; i++){
+   if (typeof users[i] == "number"){
+continue 
+   }
+   console.log(users[i])
+}
+console.log('____________________')
+for (let i=0 ; i<users.length ; i++){
+   if ( users[i] == "yacine"){
+break
+   }
+   console.log(users[i])
+}
+//vd 35 --------------------------------------------------------------
+let i = 0 ;
+while(i<3){
+document.write('<h1>HELLO WORLD</h1>')
+   i++;
+}
+
+do{
+document.write('<h1>DO WHILE 1 TIME</h1>')
+console.log("DO WHILE 1 TIME")
+}while(false)
+//vd 36 --------------------------------------------------------------
