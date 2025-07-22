@@ -228,4 +228,37 @@ do{
 document.write('<h1>DO WHILE 1 TIME</h1>')
 console.log("DO WHILE 1 TIME")
 }while(false)
-//vd 36 --------------------------------------------------------------
+//vd 36 -------------function-----------------------------------------
+ function nameF (parameter){
+console.log('hello '+parameter)
+ }
+ nameF("hasssane");
+ //vd 37 -------------function/return---------------------------------
+function pro(price , texes , ads){
+   let produc = price + texes ;
+   let result = produc + ads ;
+   return result ;
+}
+let pr = pro(1000,1.5,10 )
+console.log(pr)
+//vd 38 ---------------------------------------------------------------
+//hoisting
+//var X2
+//hiya dirha w7dha (f var brq)
+
+console.log('hello woorld !!')
+var X2 = 10 ;
+//console.log(X3) erreur
+let X3 ;
+//same thing in  functions ther is 2 type
+//1 function declaration :(hoisting)
+function hello (){
+   return 1 ;
+}
+//2 function expretion
+let hello1 = function (){
+   return 1 ;
+}
+console.log(hello1)
+console.log(hello1())
+//vd 39 ---------------------------------------------------------------
