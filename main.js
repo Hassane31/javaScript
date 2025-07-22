@@ -262,3 +262,41 @@ let hello1 = function (){
 console.log(hello1)
 console.log(hello1())
 //vd 39 ---------------------------------------------------------------
+//local 
+for(let j = 0 ; j<10 ; j++){
+}
+
+//global 
+for(var w = 0 ; w<10 ;w++){
+}//w is globel now
+
+(function (){
+   console.log('function call')
+})();
+
+
+(function (){
+   console.log('hello world !!')
+    console.log('hello world !!')
+     console.log('hello world !!')
+     var XY = 01
+     let YX = 02
+      console.log('hello world !!')
+})();
+//XY and YX is local variables 
+
+//what u see ----------------
+/* console.log (     x()     )
+function x(){
+function y(){return 1}
+return y();
+function y(){return 0}
+}
+//what JS see --------------
+function x(){
+function y(){return 1}
+function y(){return 0}
+return y();
+}
+console.log (     x()     )
+//vd 40 ---------------------------------------------------------------
