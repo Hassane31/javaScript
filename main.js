@@ -279,8 +279,8 @@ for(var w = 0 ; w<10 ;w++){
    console.log('hello world !!')
     console.log('hello world !!')
      console.log('hello world !!')
-     var XY = 01
-     let YX = 02
+     var XY = 1
+     let YX = 2
       console.log('hello world !!')
 })();
 //XY and YX is local variables 
@@ -298,5 +298,23 @@ function y(){return 1}
 function y(){return 0}
 return y();
 }
-console.log (     x()     )
+console.log (     x()     )*/
 //vd 40 ---------------------------------------------------------------
+function fonction (nn){
+   console.log(`hello ${nn}`)
+}
+fonction();
+
+function CALC (ag){
+   console.log(ag * 365);
+}
+CALC();
+
+function fonctionunlimmetedPram ( ...numbers){
+   let s=0 ;
+  for(let i = 0 ;i<numbers.length ;i++){
+   s+=numbers[i]
+  }
+  return s ;
+}
+console.log(fonctionunlimmetedPram(1,3,4,55,2,23232,323,23,2))
