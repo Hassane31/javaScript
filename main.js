@@ -318,3 +318,16 @@ function fonctionunlimmetedPram ( ...numbers){
   return s ;
 }
 console.log(fonctionunlimmetedPram(1,3,4,55,2,23232,323,23,2))
+//vd 41 ---------------------------------------------------------------
+let fn = () => 1;
+console.log(fn())
+
+let fn1 = _ => 1; //no parameter
+let fn2 = nbr => nbr;//one parameter
+console.log(fn2(22))
+
+let fn3 = (n3,n4) => n3*n4 ;//two parameter
+console.log(fn3(2,3))
+//vd 42 -----what is object--------------------------------------------
+
+
