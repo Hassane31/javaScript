@@ -341,3 +341,37 @@ console.log(car.color[1])
 console.log(car.hello())
 
 //vd 43 -----nested object--------------------------------------------
+let usr = {
+   firstName : 'abderahmane',
+   lastName : 'gamael',
+   age : 22 ,
+   active :true ,
+   skills : ['html','css','js','py'],
+   phoneNumber :{
+      first :'06638821',
+      second : '054323232',
+   },
+   isActive:function(){
+      if(usr.active === true){
+         return 'hello user'
+      }
+      else {
+         return 'sorry u r not active'
+      }
+   },
+   getAge:function(){
+      if(usr.age >= 18){
+         return 'avalible'
+      }
+      else{
+         return 'not abalible'
+      }
+   },
+}
+console.log(usr)
+console.log(usr.phoneNumber.first)
+console.log(usr['phoneNumber']['first'])
+
+console.log(usr.isActive())
+
+//vd 43 ---------------------------------------------------------------
