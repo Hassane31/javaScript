@@ -177,69 +177,69 @@ switch (rol) {
    default: document.write('hello world !!');
 }
 //vd 31 -----------loop-----------------------------------------------
- for(let i=0;i<=3;i++){
+for (let i = 0; i <= 3; i++) {
    console.log('hello world ')
    console.log(i)
- }
-//vd 32 -----------loop-----------------------------------------------
-let namess = ['hassane','houcine','ali','houssem']
-let X1 = 'hassane'
-for(let i = 0 ; i<namess.length ; i++ ){
-   console.log(namess[i]+i)
 }
-for(let i = X1.length-1 ; i>=0 ; i-- ){
+//vd 32 -----------loop-----------------------------------------------
+let namess = ['hassane', 'houcine', 'ali', 'houssem']
+let X1 = 'hassane'
+for (let i = 0; i < namess.length; i++) {
+   console.log(namess[i] + i)
+}
+for (let i = X1.length - 1; i >= 0; i--) {
    console.log(X1[i])
 }
 //vd 33 -----------loop-----------------------------------------------
-let cars = ['BMW','Mercides','renult']
-let modeles = ['2000','1989','2001']
+let cars = ['BMW', 'Mercides', 'renult']
+let modeles = ['2000', '1989', '2001']
 
-for(let i = 0 ; i<cars.length ;i++){
+for (let i = 0; i < cars.length; i++) {
    console.log(`CAR : ${cars[i]}`)
-     for(let j = 0 ; j< modeles.length ; j++){
+   for (let j = 0; j < modeles.length; j++) {
       console.log(`modele :'${modeles[j]}`)
-     }
-     console.log('_________________')
+   }
+   console.log('_________________')
 }
 //vd 34 -------------------break/continue-------------------------------------------
-let users = ['hassane','mohamed','yacine',1,2,3,4,'khaled']
+let users = ['hassane', 'mohamed', 'yacine', 1, 2, 3, 4, 'khaled']
 
-for (let i=0 ; i<users.length ; i++){
-   if (typeof users[i] == "number"){
-continue 
+for (let i = 0; i < users.length; i++) {
+   if (typeof users[i] == "number") {
+      continue
    }
    console.log(users[i])
 }
 console.log('____________________')
-for (let i=0 ; i<users.length ; i++){
-   if ( users[i] == "yacine"){
-break
+for (let i = 0; i < users.length; i++) {
+   if (users[i] == "yacine") {
+      break
    }
    console.log(users[i])
 }
 //vd 35 --------------------------------------------------------------
-let i = 0 ;
-while(i<3){
-document.write('<h1>HELLO WORLD</h1>')
+let i = 0;
+while (i < 3) {
+   document.write('<h1>HELLO WORLD</h1>')
    i++;
 }
 
-do{
-document.write('<h1>DO WHILE 1 TIME</h1>')
-console.log("DO WHILE 1 TIME")
-}while(false)
+do {
+   document.write('<h1>DO WHILE 1 TIME</h1>')
+   console.log("DO WHILE 1 TIME")
+} while (false)
 //vd 36 -------------function-----------------------------------------
- function nameF (parameter){
-console.log('hello '+parameter)
- }
- nameF("hasssane");
- //vd 37 -------------function/return---------------------------------
-function pro(price , texes , ads){
-   let produc = price + texes ;
-   let result = produc + ads ;
-   return result ;
+function nameF(parameter) {
+   console.log('hello ' + parameter)
 }
-let pr = pro(1000,1.5,10 )
+nameF("hasssane");
+//vd 37 -------------function/return---------------------------------
+function pro(price, texes, ads) {
+   let produc = price + texes;
+   let result = produc + ads;
+   return result;
+}
+let pr = pro(1000, 1.5, 10)
 console.log(pr)
 //vd 38 ---------------------------------------------------------------
 //hoisting
@@ -247,41 +247,41 @@ console.log(pr)
 //hiya dirha w7dha (f var brq)
 
 console.log('hello woorld !!')
-var X2 = 10 ;
+var X2 = 10;
 //console.log(X3) erreur
-let X3 ;
+let X3;
 //same thing in  functions ther is 2 type
 //1 function declaration :(hoisting)
-function hello (){
-   return 1 ;
+function hello() {
+   return 1;
 }
 //2 function expretion
-let hello1 = function (){
-   return 1 ;
+let hello1 = function () {
+   return 1;
 }
 console.log(hello1)
 console.log(hello1())
 //vd 39 ---------------------------------------------------------------
 //local 
-for(let j = 0 ; j<10 ; j++){
+for (let j = 0; j < 10; j++) {
 }
 
 //global 
-for(var w = 0 ; w<10 ;w++){
+for (var w = 0; w < 10; w++) {
 }//w is globel now
 
-(function (){
+(function () {
    console.log('function call')
 })();
 
 
-(function (){
+(function () {
    console.log('hello world !!')
-    console.log('hello world !!')
-     console.log('hello world !!')
-     var XY = 1
-     let YX = 2
-      console.log('hello world !!')
+   console.log('hello world !!')
+   console.log('hello world !!')
+   var XY = 1
+   let YX = 2
+   console.log('hello world !!')
 })();
 //XY and YX is local variables 
 
@@ -300,25 +300,25 @@ return y();
 }
 console.log (     x()     )*/
 //vd 40 ---------------------------------------------------------------
-function fonction (nn){
+function fonction(nn) {
    console.log(`hello ${nn}`)
 }
 fonction();
 
-function CALC (ag){
+function CALC(ag) {
    console.log(ag * 365);
 }
 CALC();
 
-function fonctionunlimmetedPram ( ...numbers){
-   let s=0 ;
-  for(let i = 0 ;i<numbers.length ;i++){
-   s+=numbers[i]
-  }
-  return s ;
+function fonctionunlimmetedPram(...numbers) {
+   let s = 0;
+   for (let i = 0; i < numbers.length; i++) {
+      s += numbers[i]
+   }
+   return s;
 }
-console.log(fonctionunlimmetedPram(1,3,4,55,2,23232,323,23,2))
-//vd 41 ---------------------------------------------------------------
+console.log(fonctionunlimmetedPram(1, 3, 4, 55, 2, 23232, 323, 23, 2))
+//vd 41 ----------arrow function-----------------------------------------
 let fn = () => 1;
 console.log(fn())
 
@@ -326,8 +326,18 @@ let fn1 = _ => 1; //no parameter
 let fn2 = nbr => nbr;//one parameter
 console.log(fn2(22))
 
-let fn3 = (n3,n4) => n3*n4 ;//two parameter
-console.log(fn3(2,3))
+let fn3 = (n3, n4) => n3 * n4;//two parameter
+console.log(fn3(2, 3))
 //vd 42 -----what is object--------------------------------------------
+let car = {
+   nameCar: 'laguna',
+   priceCar: 1270000,
+   color: ['red', 'blue', 'black'],
 
+   hello: function () { return 'hello' }
+};
+console.log(car.nameCar)
+console.log(car.color[1])
+console.log(car.hello())
 
+//vd 43 -----nested object--------------------------------------------
