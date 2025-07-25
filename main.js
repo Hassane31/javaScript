@@ -400,3 +400,20 @@ console.log(thisFunction())
 numbr= 10;
 console.log(numbr);
 //vd 46 ---------------------------------------------------------------
+let user4 ={
+   name : 'laabane in user4',
+
+   getName :function(){
+      return `hello ${this.name}`
+   }
+}
+//copy user4 and past in user5 and ad prop
+ let user5 = Object.create(user4 ,{
+   age :{value :20}
+ });
+ console.log(user5.name)
+ user5.name = 'ahmed'
+ console.log(user5.getName())//i used this here->return `hello ${this.name}`
+ 
+//vd 47 ---------------------------------------------------------------
+  
