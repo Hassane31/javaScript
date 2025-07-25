@@ -341,7 +341,7 @@ console.log(car.color[1])
 console.log(car.hello())
 
 //vd 43 -----nested object--------------------------------------------
-let usr = {
+let user1 = {
    firstName : 'abderahmane',
    lastName : 'gamael',
    age : 22 ,
@@ -352,7 +352,7 @@ let usr = {
       second : '054323232',
    },
    isActive:function(){
-      if(usr.active === true){
+      if(user1.active === true){
          return 'hello user'
       }
       else {
@@ -360,7 +360,7 @@ let usr = {
       }
    },
    getAge:function(){
-      if(usr.age >= 18){
+      if(user1.age >= 18){
          return 'avalible'
       }
       else{
@@ -368,10 +368,35 @@ let usr = {
       }
    },
 }
-console.log(usr)
-console.log(usr.phoneNumber.first)
-console.log(usr['phoneNumber']['first'])
+console.log(user1)
+console.log(user1.phoneNumber.first)
+console.log(user1['phoneNumber']['first'])
+console.log(user1.isActive())
+console.log(user1['getAge']())
 
-console.log(usr.isActive())
-
-//vd 43 ---------------------------------------------------------------
+//vd 44 ---------------------------------------------------------------
+let user2 = {};
+user2.name2 = 'hassane';
+console.log(user2.name2)
+//add method
+user2.hello = function (){
+   return 'function user2'
+}
+console.log(user2.hello())
+//nother way
+let user3 = new Object()
+console.log(user3)
+user3.titel = 'new titel'
+console.log(user3.titel)
+//vd 45 ---------------------------------------------------------------
+let p = this ;
+console.log(p)
+//this.alert()
+function thisFunction (){
+   return this ;
+}
+console.log(thisFunction())
+"use strict";
+numbr= 10;
+console.log(numbr);
+//vd 46 ---------------------------------------------------------------
