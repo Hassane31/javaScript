@@ -416,4 +416,19 @@ let user4 ={
  console.log(user5.getName())//i used this here->return `hello ${this.name}`
  
 //vd 47 ---------------------------------------------------------------
-  
+  let a1 = {
+   nu1 :1,
+   hellow : function (){
+      return 'hello';
+   }
+  }
+    let a2 = {
+   nu2 :2
+  }
+    let a3 = {
+   nu3 :3
+  }
+
+  let a4 = Object.assign(a1,a2,a3)
+  console.log(a4)
+  //vd 48 ---------------------------------------------------------------
