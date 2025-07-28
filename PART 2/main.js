@@ -31,3 +31,4 @@ links.href ='https://www.instagram.com'//change link
 
 let forms = document.forms
 console.log(forms)
+//////////////////// vd 49 //////////////////////////////
