@@ -70,3 +70,19 @@ console.log(element.previousElementSibling)//return jast elments
 //element.parentElement.remove()
 
 // vd 52------dom css style-------------------------------
+console.log(container)
+
+//element.style.property = value
+container.style.backgroundColor= 'red';
+container.style.padding = '100px';
+
+//element.style.cssText=
+container.style.cssText = `color : white;
+padding : 100px ;
+background : red ;
+
+`
+container.style.removeProperty('padding')
+container.style.setProperty('color','blue','important')
+
+// vd 53-----create elements by javascript------------------
