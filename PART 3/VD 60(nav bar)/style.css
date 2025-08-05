@@ -22,7 +22,9 @@ button{
     border-radius:  5px;
 }
 button:hover{
-
+background: black;
+color: red;
+cursor: pointer;
 }
 #close{
     position: absolute;
